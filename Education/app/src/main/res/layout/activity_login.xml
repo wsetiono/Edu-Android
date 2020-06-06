@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/colorPrimary"
+    tools:context=".LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <EditText
+                android:id="@+id/editTxt_email"
+                android:hint="Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/editTxt_password"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_gravity="center_horizontal"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="LOGIN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

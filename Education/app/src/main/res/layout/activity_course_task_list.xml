@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CourseTaskListActivity">
+
+    <ImageView
+        android:id="@+id/imgCoursePicture"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/icon_statistic" />
+
+    <TextView
+        android:id="@+id/txtCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTextGray"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="Android"
+        android:textAlignment="center"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtCourseContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="Belajar Android"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtCoursePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="Rp 500000"
+        android:textAlignment="center" />
+
+    <ListView
+        android:id="@+id/course_task_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+</LinearLayout>
